@@ -1,10 +1,10 @@
-# 🐍 Python Learning Syllabus
+# 📊 Python for Data Analytics - Learning Syllabus
 
-A structured roadmap for learning Python from beginner to advanced.
+A complete roadmap to learn **Python for Data Analytics** from beginner to advanced. This repository is organized topic-by-topic with examples, practice exercises, and mini projects.
 
 ---
 
-## 📖 Table of Contents
+# 📚 Table of Contents
 
 1. Python Basics
 2. Variables & Data Types
@@ -22,121 +22,119 @@ A structured roadmap for learning Python from beginner to advanced.
 14. Exception Handling
 15. Modules & Packages
 16. Object-Oriented Programming (OOP)
-17. Iterators & Generators
-18. Lambda Functions
-19. List Comprehensions
-20. Virtual Environments
-21. Working with APIs
-22. Database Connectivity
-23. Multithreading & Multiprocessing
-24. Testing in Python
-25. Popular Python Libraries
-26. Projects
-27. Resources
+17. NumPy
+18. Pandas
+19. Data Cleaning
+20. Data Manipulation
+21. Data Visualization
+22. Exploratory Data Analysis (EDA)
+23. Statistics for Data Analytics
+24. Working with Excel Files
+25. Working with SQL
+26. APIs & JSON Data
+27. Time Series Basics
+28. Machine Learning Basics
+29. Real-World Projects
+30. Learning Resources
 
 ---
 
-# 1. Python Basics
+# 1️⃣ Python Basics
 
 - Introduction to Python
 - Installing Python
-- Setting up VS Code / PyCharm
-- Running Python Programs
+- Setting up VS Code / Jupyter Notebook
 - Python Syntax
 - Comments
-- Indentation
+- Variables
 - Keywords
 - Identifiers
-- Basic Program Structure
-
----
-
-# 2. Variables & Data Types
-
-- Variables
-- Naming Rules
-- Numbers
-- Strings
-- Boolean
+- Data Types
 - Type Conversion
-- Type Checking
 
 ---
 
-# 3. Operators
+# 2️⃣ Variables & Data Types
+
+- Integer
+- Float
+- String
+- Boolean
+- None
+- Type Casting
+
+---
+
+# 3️⃣ Operators
 
 - Arithmetic Operators
-- Assignment Operators
 - Comparison Operators
+- Assignment Operators
 - Logical Operators
-- Bitwise Operators
-- Identity Operators
 - Membership Operators
+- Identity Operators
 
 ---
 
-# 4. Input & Output
+# 4️⃣ Input & Output
 
-- print()
 - input()
+- print()
 - String Formatting
 - f-Strings
 
 ---
 
-# 5. Conditional Statements
+# 5️⃣ Conditional Statements
 
 - if
 - if-else
 - if-elif-else
-- Nested if
+- Nested Conditions
 
 ---
 
-# 6. Loops
+# 6️⃣ Loops
 
 - for Loop
 - while Loop
 - break
 - continue
 - pass
-- Nested Loops
 
 ---
 
-# 7. Functions
+# 7️⃣ Functions
 
 - Creating Functions
 - Parameters
-- Return Statement
-- Default Arguments
-- Keyword Arguments
-- Variable-Length Arguments
+- Return Values
+- Lambda Functions
 - Recursion
 
 ---
 
-# 8. Strings
+# 8️⃣ Strings
 
 - String Methods
-- Slicing
 - Indexing
+- Slicing
 - Formatting
-- Escape Characters
 
 ---
 
-# 9. Lists
+# 9️⃣ Lists
 
 - Creating Lists
 - Indexing
 - Slicing
 - List Methods
 - Nested Lists
+- List Comprehensions
 
 ---
 
-# 10. Tuples
+# 🔟 Tuples
 
 - Creating Tuples
 - Tuple Methods
@@ -144,7 +142,7 @@ A structured roadmap for learning Python from beginner to advanced.
 
 ---
 
-# 11. Sets
+# 1️⃣1️⃣ Sets
 
 - Creating Sets
 - Set Operations
@@ -152,46 +150,43 @@ A structured roadmap for learning Python from beginner to advanced.
 
 ---
 
-# 12. Dictionaries
+# 1️⃣2️⃣ Dictionaries
 
 - Creating Dictionaries
 - Accessing Values
+- Updating Data
 - Dictionary Methods
-- Nested Dictionaries
 
 ---
 
-# 13. File Handling
+# 1️⃣3️⃣ File Handling
 
 - Reading Files
 - Writing Files
-- Appending Data
-- Working with CSV Files
+- CSV Files
+- Text Files
 
 ---
 
-# 14. Exception Handling
+# 1️⃣4️⃣ Exception Handling
 
 - try
 - except
-- else
 - finally
-- Raising Exceptions
 - Custom Exceptions
 
 ---
 
-# 15. Modules & Packages
+# 1️⃣5️⃣ Modules & Packages
 
-- Importing Modules
-- Creating Modules
-- Packages
+- Import Modules
+- Create Modules
 - pip
-- Installing Libraries
+- Virtual Environments
 
 ---
 
-# 16. Object-Oriented Programming (OOP)
+# 1️⃣6️⃣ Object-Oriented Programming
 
 - Classes
 - Objects
@@ -199,124 +194,207 @@ A structured roadmap for learning Python from beginner to advanced.
 - Inheritance
 - Encapsulation
 - Polymorphism
-- Abstraction
 
 ---
 
-# 17. Iterators & Generators
+# 1️⃣7️⃣ NumPy
 
-- Iterators
-- Generator Functions
-- yield
-
----
-
-# 18. Lambda Functions
-
-- Lambda Expressions
-- map()
-- filter()
-- reduce()
+- NumPy Arrays
+- Array Operations
+- Indexing
+- Slicing
+- Reshaping
+- Broadcasting
+- Mathematical Functions
+- Random Module
 
 ---
 
-# 19. List Comprehensions
+# 1️⃣8️⃣ Pandas
 
-- Basic Comprehension
-- Nested Comprehension
-- Dictionary Comprehension
-- Set Comprehension
-
----
-
-# 20. Virtual Environments
-
-- Creating Virtual Environments
-- Activating
-- Installing Packages
-- requirements.txt
+- Series
+- DataFrames
+- Reading CSV & Excel Files
+- Selecting Rows & Columns
+- Filtering Data
+- Sorting
+- Renaming Columns
+- Data Types
 
 ---
 
-# 21. Working with APIs
+# 1️⃣9️⃣ Data Cleaning
 
-- HTTP Requests
-- requests Library
-- JSON Data
+- Handling Missing Values
+- Removing Duplicates
+- Replacing Values
+- Data Formatting
+- Feature Engineering
+
+---
+
+# 2️⃣0️⃣ Data Manipulation
+
+- Merge
+- Join
+- Concatenate
+- GroupBy
+- Aggregate Functions
+- Pivot Tables
+- Apply Functions
+
+---
+
+# 2️⃣1️⃣ Data Visualization
+
+### Matplotlib
+- Line Chart
+- Bar Chart
+- Histogram
+- Scatter Plot
+- Pie Chart
+
+### Seaborn
+- Heatmap
+- Pair Plot
+- Count Plot
+- Box Plot
+- Violin Plot
+
+---
+
+# 2️⃣2️⃣ Exploratory Data Analysis (EDA)
+
+- Data Inspection
+- Summary Statistics
+- Correlation Analysis
+- Outlier Detection
+- Distribution Analysis
+- Feature Relationships
+
+---
+
+# 2️⃣3️⃣ Statistics for Data Analytics
+
+- Mean
+- Median
+- Mode
+- Variance
+- Standard Deviation
+- Probability Basics
+- Correlation
+- Covariance
+- Hypothesis Testing
+
+---
+
+# 2️⃣4️⃣ Working with Excel
+
+- Reading Excel Files
+- Writing Excel Files
+- Multiple Sheets
+- Formatting Data
+
+---
+
+# 2️⃣5️⃣ SQL for Data Analytics
+
+- SQL Basics
+- SELECT
+- WHERE
+- ORDER BY
+- GROUP BY
+- JOIN
+- Aggregate Functions
+- Connecting Python with SQL Databases
+
+---
+
+# 2️⃣6️⃣ APIs & JSON
+
 - REST APIs
+- requests Library
+- JSON Parsing
+- Fetching Online Data
 
 ---
 
-# 22. Database Connectivity
+# 2️⃣7️⃣ Time Series Basics
 
-- SQLite
-- MySQL
-- PostgreSQL
-- CRUD Operations
-
----
-
-# 23. Multithreading & Multiprocessing
-
-- Threads
-- Processes
-- Synchronization
+- Datetime Module
+- Time Indexing
+- Resampling
+- Rolling Window Analysis
 
 ---
 
-# 24. Testing in Python
+# 2️⃣8️⃣ Machine Learning Basics
 
-- unittest
-- pytest
-- Assertions
+- Data Preprocessing
+- Train-Test Split
+- Scikit-learn Basics
+- Linear Regression
+- Logistic Regression
+- Decision Trees
+- Model Evaluation
 
 ---
 
-# 25. Popular Python Libraries
+# 2️⃣9️⃣ Real-World Projects
 
+- Sales Dashboard
+- Customer Churn Analysis
+- Netflix Data Analysis
+- COVID-19 Data Analysis
+- IPL Data Analysis
+- Employee Attrition Analysis
+- Stock Market Analysis
+- E-commerce Sales Analysis
+- Weather Data Analysis
+
+---
+
+# 3️⃣0️⃣ Learning Resources
+
+- Python Documentation
+- NumPy Documentation
+- Pandas Documentation
+- Matplotlib Documentation
+- Seaborn Documentation
+- Scikit-learn Documentation
+- Kaggle Datasets
+
+---
+
+# 🛠 Tools You'll Learn
+
+- Python
+- Jupyter Notebook
+- VS Code
 - NumPy
 - Pandas
 - Matplotlib
 - Seaborn
-- Requests
-- Flask
-- Django
-- FastAPI
+- SQL
+- Excel
+- Scikit-learn
+- Git & GitHub
 
 ---
 
-# 26. Projects
+# 🎯 Learning Outcomes
 
-- Calculator
-- To-Do List
-- Weather App
-- Password Generator
-- Expense Tracker
-- File Organizer
-- Web Scraper
-- REST API
-- Chat Application
+After completing this roadmap, you will be able to:
 
----
-
-# 27. Resources
-
-- Official Python Documentation
-- Python Practice Websites
-- GitHub Repositories
-- Coding Challenges
+- ✅ Write Python programs confidently
+- ✅ Analyze and clean datasets
+- ✅ Perform Exploratory Data Analysis (EDA)
+- ✅ Create professional visualizations
+- ✅ Work with Excel, CSV, SQL, and APIs
+- ✅ Build data analytics projects
+- ✅ Prepare datasets for machine learning
+- ✅ Create a strong portfolio for Data Analytics roles
 
 ---
 
-## 🎯 Learning Goals
-
-- Learn Python syntax and fundamentals.
-- Build strong programming logic.
-- Understand object-oriented programming.
-- Work with files, APIs, and databases.
-- Develop real-world Python projects.
-- Prepare for Python interviews and advanced frameworks.
-
----
-
-## 🚀 Happy Coding!
+## ⭐ If you find this repository helpful, consider giving it a star!

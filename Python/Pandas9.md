@@ -250,6 +250,263 @@ DataFrame
 
 ---
 
+
+# 📊 Series vs DataFrame
+
+Both **Series** and **DataFrame** are fundamental Pandas data structures.
+
+| Feature                          | Series                 | DataFrame                             |
+| -------------------------------- | ---------------------- | ------------------------------------- |
+| Dimension                        | 1-Dimensional          | 2-Dimensional                         |
+| Structure                        | Single column of data  | Rows and multiple columns             |
+| Similar to                       | A single column        | A complete table                      |
+| Has Index                        | ✅ Yes                  | ✅ Yes                                 |
+| Has Columns                      | ❌ No                   | ✅ Yes                                 |
+| Can contain different data types | Usually one main dtype | Different dtype for each column       |
+| Created using                    | `pd.Series()`          | `pd.DataFrame()`                      |
+| Example                          | `[10, 20, 30]`         | `{"Name": [...], "Age": [...]}`       |
+| Access                           | `s[0]` / `s["A"]`      | `df["Name"]`, `df.loc[]`, `df.iloc[]` |
+| Shape                            | `(n,)`                 | `(rows, columns)`                     |
+
+---
+
+## Series
+
+A **Series** is a one-dimensional labeled data structure.
+
+```python
+import pandas as pd
+
+s = pd.Series(
+    [80, 90, 75],
+    index=["John", "Alice", "Bob"]
+)
+
+print(s)
+```
+
+Output:
+
+```text
+John     80
+Alice    90
+Bob      75
+dtype: int64
+```
+
+Think of a Series as **one column**:
+
+```text
+John     → 80
+Alice    → 90
+Bob      → 75
+```
+
+---
+
+## DataFrame
+
+A **DataFrame** is a two-dimensional labeled data structure.
+
+```python
+import pandas as pd
+
+df = pd.DataFrame({
+    "Name": ["John", "Alice", "Bob"],
+    "Age": [20, 21, 22],
+    "Marks": [80, 90, 75]
+})
+
+print(df)
+```
+
+Output:
+
+```text
+    Name  Age  Marks
+0   John   20     80
+1  Alice   21     90
+2    Bob   22     75
+```
+
+Think of a DataFrame as a **complete table**.
+
+---
+
+## Relationship Between Series and DataFrame
+
+A DataFrame is essentially a collection of Series that share the same index.
+
+```text
+             DataFrame
+    ┌──────────┬──────┬───────┐
+    │   Name   │ Age  │ Marks │
+    ├──────────┼──────┼───────┤
+    │ John     │ 20   │ 80    │
+    │ Alice    │ 21   │ 90    │
+    │ Bob      │ 22   │ 75    │
+    └──────────┴──────┴───────┘
+         ↓        ↓       ↓
+       Series   Series  Series
+```
+
+For example:
+
+```python
+names = df["Name"]
+ages = df["Age"]
+marks = df["Marks"]
+```
+
+Each of these is a **Series**.
+
+```python
+print(type(names))
+```
+
+Output:
+
+```text
+<class 'pandas.core.series.Series'>
+```
+
+Whereas:
+
+```python
+print(type(df))
+```
+
+Output:
+
+```text
+<class 'pandas.core.frame.DataFrame'>
+```
+
+---
+
+## Converting Series to DataFrame
+
+A Series can be converted into a DataFrame:
+
+```python
+s = pd.Series([10, 20, 30])
+
+df = s.to_frame(
+    name="Marks"
+)
+
+print(df)
+```
+
+Output:
+
+```text
+   Marks
+0     10
+1     20
+2     30
+```
+
+---
+
+## Selecting One Column vs Multiple Columns
+
+### One column → Series
+
+```python
+df["Name"]
+```
+
+Result:
+
+```text
+0     John
+1    Alice
+2      Bob
+```
+
+Type:
+
+```python
+type(df["Name"])
+```
+
+```text
+Series
+```
+
+### Multiple columns → DataFrame
+
+```python
+df[["Name", "Age"]]
+```
+
+Result:
+
+```text
+    Name  Age
+0   John   20
+1  Alice   21
+2    Bob   22
+```
+
+Type:
+
+```python
+type(df[["Name", "Age"]])
+```
+
+```text
+DataFrame
+```
+
+### ⭐ Important Interview Point
+
+Remember:
+
+```python
+df["Name"]       # Series
+df[["Name"]]     # DataFrame
+```
+
+The difference is the **double square brackets**.
+
+---
+
+## Quick Memory Trick
+
+```text
+Series
+   ↓
+ONE column
+   ↓
+1D
+```
+
+```text
+DataFrame
+   ↓
+MULTIPLE columns / table
+   ↓
+2D
+```
+
+### Easy analogy
+
+Think of an Excel spreadsheet:
+
+```text
+One column          → Series
+
+Entire spreadsheet  → DataFrame
+```
+
+### Final Rule
+
+> **Series = one labeled column of data.**
+> **DataFrame = a collection of labeled columns forming a table.**
+---
+
 # 7. Series
 
 A **Series** is a one-dimensional labeled array.
